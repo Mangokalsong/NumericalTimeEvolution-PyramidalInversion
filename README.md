@@ -1,4 +1,4 @@
-# Numerical TimeEvolution & Pyramidal Inversion
+# Numerical Time Evolution & Pyramidal Inversion
 (Originally made for an assignment in Quantum Physics class)
 
 This python class allows you to run numerical Schrödinger time evolution on wave functions in varying time-independent potentials using [Crank-Nicolson's method](https://en.wikipedia.org/wiki/Crank%E2%80%93Nicolson_method). There are options to animate the evolution of the wavefunction either as a pdf or as a double plot with imaginary and real parts separated as different colors. You may also plot two separate pdf's at the same time. 
