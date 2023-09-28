@@ -212,7 +212,7 @@ class SchroedingerTimeEvolution:
             ax.set_ylim(-max(abs(psi_k_t_1[0]))**2, max(abs(psi_k_t_1[0]))**2)
             ax.set_xlabel('z')
             ax.set_ylabel(r'$\psi(z)$')
-            ax.set_title('Animation of imaginary and real parts of wavefunction in position space over time')
+            ax.set_title('Animation of imaginary and real parts of wavefunction')
             progress = ax.text(0.02, 0.95, '', transform=ax.transAxes, fontsize=14, verticalalignment='top', bbox=dict(boxstyle='square', facecolor='grey', alpha=0.2))
 
             if double_plot == True:
@@ -296,12 +296,12 @@ class SchroedingerTimeEvolution:
                 save_mp4_function(filename='pdf_pyr_inv')
             plt.show()
 
-# if __name__ == "__main__":
+if __name__ == "__main__":
 
-#     S = SchroedingerTimeEvolution(Delta=1e-3, deltatau=1e-4, runtime=250)
-#     # psi_k_t_analytical = S.analytical_schroedinger_time_evolution(psi_func=S.psi_analytical_alt_x_t)
-#     psi_k_t_numerical = S.numerical_schroedinger_time_evolution(psi_func=S.psi_numerical_x, v_func=S.v_infsquare)
-#     S.animate_distribution(psi_k_t_numerical, interval=30, save_gif=True, plot_type='real_vs_imaginary', plot_every_nth_step=1)
+    S = SchroedingerTimeEvolution(Delta=1e-3, deltatau=1e-4, runtime=250)
+    # psi_k_t_analytical = S.analytical_schroedinger_time_evolution(psi_func=S.psi_analytical_alt_x_t)
+    psi_k_t_numerical = S.numerical_schroedinger_time_evolution(psi_func=S.psi_numerical_x, v_func=S.v_infsquare)
+    S.animate_distribution(psi_k_t_numerical, interval=30, save_gif=True, plot_type='real_vs_imaginary', plot_every_nth_step=1)
 
 #     pyr_inv = SchroedingerTimeEvolution(Delta=1e-2, deltatau=1e-3, runtime=850000, pyr_inv_distance = 1/8)
 #     psi_k_t_pyr_inv = pyr_inv.numerical_schroedinger_time_evolution(psi_func=pyr_inv.psi_pyramidal_inversion_x, v_func=pyr_inv.v_pyramidal_inversion, normalize_every_step=True)
