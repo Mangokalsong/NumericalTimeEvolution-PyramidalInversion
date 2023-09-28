@@ -128,8 +128,8 @@ class SchroedingerTimeEvolution:
         plot_type='pdf_pyr_inv' plots the probability density function of the wave function during pyramidal inversion.
         double_plot=True plots two wave functions in the same plot.
         plot_every_nth_step=1 plots every step, plot_every_nth_step=2 plots every second step, etc.
-        interval=30 is the time between frames in milliseconds.
-        Saving as gif/mp4 file is saved in the same directory. FFmpeg is required to save as mp4.
+        interval is the time between frames in milliseconds.
+        gif/mp4 file is saved in the same directory. FFmpeg is required to save as mp4.
         """
         def save_gif_function(filename):
             current_dir = dirname(__file__)
