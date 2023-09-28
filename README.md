@@ -11,7 +11,7 @@ Various wavefunctions and potentials are already built into the class, including
 
 Example animations of pyramidal inversion:
 
-![a=*x_0](example_animations/pdf_pyr_inv_distance10.gif) ![a=4*x_0](example_animations/pdf_pyr_inv_distance4.gif)
+![a=*x_0](example_animations/pdf_pyr_inv_distance4.gif) ![a=4*x_0](example_animations/pdf_pyr_inv_distance8.gif)
 
 Example animations of a free particle in an infinite square well:
 ![analytical solution does not reflect against the infinite potential wall](example_animations/pdf_infsquare_numericalvsanalytical.gif) ![psi_real_vs_psi_imaginary](example_animations/psireal_vs_psiimaginary.gif)
